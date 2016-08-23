@@ -106,14 +106,12 @@ def TransDate2String(dateList):
 	return finalList
 
 def DrawPointImage(dateList, profitList):
-	from matplotlib import pyplot as plt
+
 	dateList = TransList(dateList)
 	print "第一种转换后的日期数：", len(dateList), len(profitList)
 	finalDate, finalProfit = TransDateProfitList()
 #	sFinalDateList = TransDate2String(finalDate)
-	plt.scatter(finalDate, finalProfit)
-	print "最后", g_Idx2Date
-	plt.show()
+
 
 def PrintDateData():
 	print "现在打印日期数据"
