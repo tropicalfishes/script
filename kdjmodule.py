@@ -5,7 +5,7 @@ import module
 class KdjModule(module.ModuleBase):
 	MAX_FLOW_VALUE = 25 * 100000000
 	MAX_KDJ_K = 20
-	HOLD_DAY_CNT = 2 #持有天数
+	HOLD_DAY_CNT = 8 #持有天数
 
 	#个股是否符合条件
 	def IsStockMatch(self, oStock):
