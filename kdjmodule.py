@@ -15,7 +15,7 @@ class KdjModule(module.ModuleBase):
 
 	#个股当天是否满足条件
 	def IsDayMatch(self, dOneDayInfo):
-		bGoldCross = dOneDayInfo.get("KDJ_金叉死叉")
+		bGoldCross = dOneDayInfo.get("KDJ_金叉死叉") == "金叉"
 		fKdj = float(dOneDayInfo.get("KDJ_K"))
 		return bGoldCross and fKdj < self.MAX_KDJ_K
 
